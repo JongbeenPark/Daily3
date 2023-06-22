@@ -4,6 +4,7 @@ import android.app.TabActivity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TabHost
+import com.lilcode.aop.p4c03.googlemap.SearchActivity
 
 
 class TabMainActivity : TabActivity() {
@@ -18,6 +19,12 @@ class TabMainActivity : TabActivity() {
         intent = Intent().setClass(this, MainActivity::class.java)
         spec = tabHost.newTabSpec("Day")
         spec.setIndicator("일정")
+        spec.setContent(intent)
+        tabHost.addTab(spec)
+
+        intent = Intent().setClass(this, SearchActivity::class.java)
+        spec = tabHost.newTabSpec("Search")
+        spec.setIndicator("지도검색")
         spec.setContent(intent)
         tabHost.addTab(spec)
 
