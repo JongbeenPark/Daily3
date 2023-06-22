@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
         android:name=".config.ApplicationClass"
@@ -17,6 +19,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Reminder"
         tools:targetApi="31" >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCaz3vC_-lVIHv7s0MjChrP1RxJxp2TjWs"/>
+
+        <activity android:name=".MapActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
         <activity
             android:name=".HomeDeviceActivity"
             android:exported="false" />

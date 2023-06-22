@@ -4,7 +4,6 @@ import android.app.TabActivity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TabHost
-import com.lilcode.aop.p4c03.googlemap.SearchActivity
 
 
 class TabMainActivity : TabActivity() {

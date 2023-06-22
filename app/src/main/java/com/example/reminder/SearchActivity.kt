@@ -1,4 +1,4 @@
-package com.lilcode.aop.p4c03.googlemap
+package com.example.reminder
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -11,9 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.reminder.MapActivity
 import com.example.reminder.MapActivity.Companion.SEARCH_RESULT_EXTRA_KEY
-import com.example.reminder.SearchRecyclerAdapter
 import com.example.reminder.databinding.ActivitySearchBinding
 import com.example.reminder.model.LocationLatLngEntity
 import com.example.reminder.model.SearchResultEntity
